@@ -4,6 +4,7 @@ import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import Cookies from "js-cookie";
+import './assets/css/tailwind.css';
 import { useEffect, useState } from "react";
 
 function App() {

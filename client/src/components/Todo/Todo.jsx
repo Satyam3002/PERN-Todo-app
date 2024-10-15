@@ -27,7 +27,6 @@ export default function Todo() {
     console.log(updatedTodo);
     setTodos(updatedTodo);
     e.target.reset();
-    // console.log(response);
   };
 
   useEffect(() => {
@@ -35,16 +34,25 @@ export default function Todo() {
   }, []);
 
   return (
-    <div>
-      <form className="todo_form" onSubmit={handleAddTodo}>
-        <input type="text" placeholder="Enter todo" name="description" />
-        <button type="submit" className="btn-success">
+    <div className="container mx-auto p-4">
+      <form className="flex items-center mb-4" onSubmit={handleAddTodo}>
+        <input
+          type="text"
+          placeholder="Enter todo"
+          name="description"
+          className="flex-1 border border-gray-300 rounded-md p-2 mr-2 focus:outline-none focus:ring focus:ring-blue-500"
+        />
+        <button
+          type="submit"
+          className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition"
+        >
           ADD
         </button>
       </form>
+
       <div className="all-todos">
-        <h3>All Todos</h3>
-        <div className="todos">
+        <h3 className="text-xl font-semibold mb-2">All Todos</h3>
+        <div className="todos space-y-4">
           {todos &&
             todos.map((todo) => (
               <SingleTodo key={todo.id} todo={todo} setTodos={setTodos} />
