@@ -14,8 +14,7 @@ A Todo Application that allows users to manage tasks with features like user aut
 - User registration and login
 - Create, read, update, and delete todos
 - Responsive design
-Here’s the code for the **Installation & Running** section to include in your README:
-
+ **Installation & Running** 
 ```markdown
 ## Installation & Running
 
