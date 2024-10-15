@@ -29,12 +29,12 @@ Here’s the code for the **Installation & Running** section to include in your 
 2. **Install dependencies for both frontend and backend**:
 
    ```bash
-   cd frontend
+   cd client
    npm install
    ```
 
    ```bash
-   cd ../backend
+   cd ../server
    npm install
    ```
 
