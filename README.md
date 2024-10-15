@@ -14,3 +14,44 @@ A Todo Application that allows users to manage tasks with features like user aut
 - User registration and login
 - Create, read, update, and delete todos
 - Responsive design
+Here’s the code for the **Installation & Running** section to include in your README:
+
+```markdown
+## Installation & Running
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone <repository-url>
+   cd todo-app
+   ```
+
+2. **Install dependencies for both frontend and backend**:
+
+   ```bash
+   cd frontend
+   npm install
+   ```
+
+   ```bash
+   cd ../backend
+   npm install
+   ```
+
+3. **Set up PostgreSQL**:
+   - Create a new database and update your backend configuration with the connection details.
+
+4. **Start the applications**:
+
+   ```bash
+   cd client
+   npm run dev
+   ```
+
+   ```bash
+   cd ../server
+   node index
+   ```
+
+5. **Access the app** at `http://localhost:5173`.
+
